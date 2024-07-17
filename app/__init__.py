@@ -14,11 +14,11 @@ def create_app():
 
     migrate.init_app(app, db)
 
-    from app.scheduler import start_scheduler  # Import here to avoid circular import
+    from scheduler.scheduler import start_scheduler  # Import here to avoid circular import
 
     start_scheduler(app)  # Call the scheduler setup function directly
 
-    from app.routes import main_blueprint
+    from routes.routes import main_blueprint
 
     app.register_blueprint(main_blueprint)
 
@@ -26,4 +26,4 @@ def create_app():
 
 
 # Import db after create_app to avoid circular import
-from app.models import Event  # Example import to illustrate
+from app.models.models import Event  # Example import to illustrate

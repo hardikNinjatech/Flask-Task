@@ -1,5 +1,5 @@
 # app/models.py
-from . import db
+from .. import db
 
 
 class Event(db.Model):

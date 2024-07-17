@@ -2,7 +2,7 @@
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
-from app.models import Event
+from app.models.models import Event
 from app import db
 
 
