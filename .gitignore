@@ -80,7 +80,6 @@ ipython_config.py
 .idea/
 
 # Environments
-.env
 .venv/
 env/
 venv/
